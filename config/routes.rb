@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
-  resource  :session
-  resources :examples
+  devise_for :users, controllers: { sessions: "users/sessions" }
+  resources :messages
 
-  resources :messages do
-    resources :comments
-  end
-
-  root 'examples#index'
+  root "chat#chatroom"
 end

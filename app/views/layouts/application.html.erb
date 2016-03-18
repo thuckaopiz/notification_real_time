@@ -9,6 +9,7 @@
   <meta name="current-user" id="<%= @current_user.try(:id) %>">
 </head>
 <body>
+<%= link_to "sign out", "/users/sign_out", method: :delete if current_user %>
 
 <%= yield %>
 

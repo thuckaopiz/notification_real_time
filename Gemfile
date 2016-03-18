@@ -23,3 +23,6 @@ group :development do
   gem 'web-console', github: 'rails/web-console'
   gem 'spring'
 end
+gem 'devise', git: 'git@github.com:plataformatec/devise.git'
+# gem 'devise', '4.0.0.rc1'
+gem 'devise_lastseenable'
